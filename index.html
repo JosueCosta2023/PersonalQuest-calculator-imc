@@ -7,11 +7,46 @@
   <meta name="keywords" content="imc, javascript, html, css, figma, frontEndMentor">
   <meta name="author" content="Josué Ocanha Costa">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentors | Body Mass Index Calculator</title>
 </head>
 <body>
+      <header class="container header">
+          <div class="content-logo">
+            <img src="./assets/images/logo.svg" alt="Logo do website">
+          </div>
+          <div class="content-form">
+            <div class="content-info">
+              <h2 class="title"> Body Mass <br> Index Calculator</h2>
+              <p class="text">Better understand your weight in relation to   your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
 
- 
+            </div>
+            <form action="" class="form">
+                <h2>Enter your details below</h2>
+                <div class="select-unit">
+                  <div class="input-group">
+                    <input type="radio" name="unity" id="metric" value="metric" checked>
+                    <label for="metric">Metric</label>
+                  </div>
+
+                  <div class="input-group">
+                    <input type="radio" name="unity" id="imperial" value="imperial">
+                    <label for="imperial">Imperial</label>
+                  </div>
+                </div>
+                
+                <div class="unity-metric">
+
+
+
+
+                </div>
+                <div class="unity-imperial">2</div>
+            </form>
+          </div>
+      </header>
 
 </body>
 </html>

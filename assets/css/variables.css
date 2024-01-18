@@ -1,0 +1,17 @@
+:root{
+    --font-heading-xl:64px;
+    --font-heading-l:48px;
+    --font-heading-m:24px;
+    --font-heading-s:20px;
+    --font-body-m:16px;
+    --font-body-s:14px;
+    --font-semi-bold:600;
+    --font-regular:400;
+
+    --color-gun-metal:#253347;
+    --color-dark-eletric-blue:#5E6E85;
+    --color-blue:#345FF6;
+    --color-pure-white:#FFF;
+    --color-borders:#D8E2E7;
+}
+
