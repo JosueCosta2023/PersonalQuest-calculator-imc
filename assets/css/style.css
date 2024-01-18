@@ -69,10 +69,13 @@ html{
     color: var(--color-dark-eletric-blue);
 }
 
+/* ESILI */
+
 .container.header .content-form .form{
     min-width: 350px;
     width: 564px;
-    height: 484px;
+    min-height: 484px;
+    height: auto;
     border-radius: 16px;
     padding: 32px;
     background-color: #fff;
@@ -86,6 +89,8 @@ html{
     font-weight: var(--font-semi-bold);
     margin-bottom: 32px;
 }
+
+/* ESTILIZAÇÃO DOS INPUTS RADIOS METRICS */
 
 .container.header .content-form .form .select-unit{
     width: 100%;
@@ -115,25 +120,151 @@ html{
     font-weight: var(--font-semi-bold);
 }
 
-.container.header .content-form .form .select-unit input:checked ~ .unity-metric{
-    display: block;
-}
+
+/* ESTILIZAÇAÕ GRUPO METRICO */
 
 .container.header .content-form .form .unity-metric{
     width: 100%;
-    height: 60%;
-    background-color: red;
     display: none;
 }
 
+.container.header .content-form .form .unity-metric .inputs{
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container.header .content-form .form .unity-metric .inputs .input-group{
+    width: 238px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container.header .content-form .form .unity-metric .inputs .input-group
+.input-title{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-regular);
+    color: var(--color-dark-eletric-blue);
+    margin-bottom: 8px;
+}
+
+.container.header .content-form .form .unity-metric .inputs .input-group .input-text{
+    height: 69px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--color-borders);
+    padding-left: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+}
+
+.container.header .content-form .form .unity-metric .inputs .input-group .input-unity{
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-blue);
+}
+
+/* ESTILIZAÇÃO GRUPO IMPERIAL */
 .container.header .content-form .form .unity-imperial{
     width: 100%;
-    height: 60%;
-    background-color: blue;
-    display: none;
+    display: block;
 }
 
+.container.header .content-form .form .unity-imperial .inputs{
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+.container.header .content-form .form .unity-imperial .inputs:nth-child(2){
+    margin-top: 24px;
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group{
+    width: 238px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group
+.input-title{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-regular);
+    color: var(--color-dark-eletric-blue);
+    margin-bottom: 8px;
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group .input-text{
+    height: 69px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--color-borders);
+    padding-left: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group .input-text.sub{
+    position: absolute;
+    bottom: 0;
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group .input-unity{
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-blue);
+}
+
+.container.header .content-form .form .results{
+    width: 100%;
+    height: 166px;
+    background: rgb(52,95,246);
+    background: linear-gradient(270deg, rgba(52,95,246,1) 0%, rgba(88,125,255,1) 100%);
+    margin-top: 32px;
+    border-radius: 86px;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    color: var(--color-pure-white);
+}
+
+.container.header .content-form .form .results .results-group{
+    width: 218px;
+}
+
+.container.header .content-form .form .results .results-group
+.title{
+    font-size: var(--font-body-m);
+    margin-bottom: 10px;
+}
+
+.container.header .content-form .form .results .results-group
+.result{
+    font-size: var(--font-heading-xl);
+    font-weight: var(--font-semi-bold);
+}
+
+.container.header .content-form .form .results .result-details{
+    padding-left: 40px;
+    width: 90%;
+}
 
 
 
