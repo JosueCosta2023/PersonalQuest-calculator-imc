@@ -90,6 +90,7 @@
 
 @media(max-width: 768px){
 
+
     .container.main .vetor-direito{
         display: none;
     }
@@ -107,6 +108,7 @@
 
     .container.main .your-result .image-result{
         width: 350px;  
+        margin-top: 100px;
     }
 
     .container.main .your-result .your-result-info{

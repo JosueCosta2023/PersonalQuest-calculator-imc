@@ -110,9 +110,6 @@ html{
     height: 31px;
 }
 
-.container.header .content-form .form .select-unit .input-group input:hover{
-    cursor: pointer;
-}
 
 .container.header .content-form .form .select-unit .input-group label{
     padding-left: 10px;
@@ -143,6 +140,7 @@ html{
     position: relative;
 }
 
+
 .container.header .content-form .form .unity-metric .inputs .input-group
 .input-title{
     font-size: var(--font-body-m);
@@ -160,6 +158,11 @@ html{
     font-size: var(--font-heading-m);
     font-weight: var(--font-semi-bold);
     color: var(--color-gun-metal);
+    cursor: pointer;
+}
+
+.container.header .content-form .form .unity-metric .inputs .input-group .input-text:hover{
+    border: 1px solid var(--color-blue);
 }
 
 .container.header .content-form .form .unity-metric .inputs .input-group .input-unity{
@@ -214,6 +217,11 @@ html{
     font-size: var(--font-heading-m);
     font-weight: var(--font-semi-bold);
     color: var(--color-gun-metal);
+    cursor: pointer;
+}
+
+.container.header .content-form .form .unity-imperial .inputs .input-group .input-text:hover{
+    border: 1px solid var(--color-blue);
 }
 
 .container.header .content-form .form .unity-imperial .inputs .input-group .input-text.sub{
