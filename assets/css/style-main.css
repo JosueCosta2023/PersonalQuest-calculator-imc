@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+.container.main{
+    height: auto;
+    margin-top: 75px;
+    position: relative;
+}
+
+.container.main .vetor-direito{
+    position: absolute;
+    right: 30px;
+    top: -150px;
+}
+
+/* ESTILIZAÇÃO DOS RESULTADOS */
+
+.container.main .your-result{
+    height: 533px;
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+}
+
+.container.main .your-result .image-result{
+    width: 564px;  
+}
+
+.container.main .your-result .your-result-info{
+    width: 465px;
+    margin-left: 131px;
+    margin-top: 150px;
+}
+
+.container.main .your-result .your-result-info .title{
+    font-size: var(--font-heading-l);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+    margin-bottom: 35px;
+}
+.container.main .your-result .your-result-info .text{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-regular);
+    color: var(--color-dark-eletric-blue);
+    line-height: 150%;
+}
+
+/* ESTILIZAÇÃO DO TIPS */
+
+.container.main .tips{
+    margin-bottom: 120px;
+    display: flex;
+    max-width: 1395px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+    background: rgb(214,252,254);
+background: linear-gradient(176deg, rgba(214,252,254,0) 0%, rgba(214,230,254,1) 100%);
+}
+
+.container.main .tips .content{
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container.main .tips .content img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 45px;
+}
+
+.container.main .tips .content .title{
+    margin-bottom: 24px;
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+}
+
+/* ESTILIZAÇÃO DOS BMIS */
+
+.container.main .bmi-limitations{
+    height: 704px;
+    background-color: rosybrown;
+}

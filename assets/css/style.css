@@ -90,7 +90,7 @@ html{
     margin-bottom: 32px;
 }
 
-/* ESTILIZAÇÃO DOS INPUTS RADIOS METRICS */
+/* ESTILIZAÇÃO DOS INPUTS RADIOS */
 
 .container.header .content-form .form .select-unit{
     width: 100%;
@@ -125,7 +125,7 @@ html{
 
 .container.header .content-form .form .unity-metric{
     width: 100%;
-    display: none;
+    display: block;
 }
 
 .container.header .content-form .form .unity-metric .inputs{
@@ -174,7 +174,7 @@ html{
 /* ESTILIZAÇÃO GRUPO IMPERIAL */
 .container.header .content-form .form .unity-imperial{
     width: 100%;
-    display: block;
+    display: none;
 }
 
 .container.header .content-form .form .unity-imperial .inputs{
