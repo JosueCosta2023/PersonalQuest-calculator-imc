@@ -68,7 +68,7 @@ html{
     flex-wrap: wrap;
     margin-bottom: 72px;
     background: rgb(214,252,254);
-background: linear-gradient(176deg, rgba(214,252,254,0) 0%, rgba(214,230,254,1) 100%);
+background: linear-gradient(176deg, rgba(214,252,254,0) 0%, rgba(214,230,254,1) 200%);
 }
 
 .container.main .tips .content{
@@ -95,6 +95,124 @@ background: linear-gradient(176deg, rgba(214,252,254,0) 0%, rgba(214,230,254,1) 
 /* ESTILIZAÇÃO DOS BMIS */
 
 .container.main .bmi-limitations{
-    height: 704px;
-    background-color: rosybrown;
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container.main .bmi-limitations .limitations-text{
+    width: 450px;
+    height: 184px;
+}
+
+.container.main .bmi-limitations .limitations-text .title{
+    font-size: var(--font-heading-l);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+    margin-bottom: 35px;
+}
+
+.container.main .bmi-limitations .limitations-text .text{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-regular);
+    color: var(--color-dark-eletric-blue);
+}
+
+.container.main .bmi-limitations .card{
+    background-color: var(--color-pure-white);
+    -webkit-box-shadow: 16px 32px 56px 0px rgba(143,174,207,0.25);
+    -moz-box-shadow: 16px 32px 56px 0px rgba(143,174,207,0.25);
+    box-shadow: 16px 32px 56px 0px rgba(143,174,207,0.25);
+    border-radius: 16px;
+}
+
+.container.main .bmi-limitations .card{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+.container.main .bmi-limitations .card .card-log{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.container.main .bmi-limitations .card .card-log .title{
+    font-size: var(--font-heading-s);
+    font-weight: var(--font-semi-bold);
+    color: var(--color-gun-metal);
+}
+
+.container.main .bmi-limitations .card .text{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-regular);
+    color: var(--color-dark-eletric-blue);
+}
+
+.container.main .bmi-limitations .card1{
+    width: 365px;
+    height: 232px;
+}
+
+.container.main .bmi-limitations .card2{
+    width: 365px;
+    height: 184px;
+    margin-left: 250px;
+}
+
+.container.main .bmi-limitations .card3{
+    width: 365px;
+    height: 184px;
+}
+
+.container.main .bmi-limitations .card4{
+    width: 365px;
+    height: 232px;
+    margin-left: 100px;
+}
+
+.container.main .bmi-limitations .card5{
+    width: 365px;
+    height: 232px;
+
+}
+
+.container-footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-footer h2{
+    font-size: var(--font-heading-m);
+    font-weight: var(--font-regular);
+    color: var(--color-gun-metal);
+    text-align: center;
+}
+
+.container-footer .social{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-footer .social a i{
+   font-size: 32px;
+   padding-left: 20px;
+   color: var(--color-dark-eletric-blue);
+}
+
+.container-footer .social a i:hover{
+    color: var(--color-gun-metal);
 }

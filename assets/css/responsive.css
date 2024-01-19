@@ -64,7 +64,11 @@
         justify-content: center;
         width: 100%;
         gap: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .container.main .tips .content .title{
+        margin-bottom: 5px;
     }
 
     .container.main .tips .content img{
@@ -154,6 +158,14 @@
     .container.header .content-form .form .unity-imperial .inputs .input-group:nth-child(2){
         margin-top: 80px;
     }
+
+    .container.main .bmi-limitations .limitations-text{
+        height: auto;
+    }
+
+    .container.main .bmi-limitations .card{
+        height: auto;
+    }
 }
 
 @media(max-width:400px){
@@ -165,10 +177,33 @@
         flex-direction: column;
         align-items: start;
     }
+    .container.main .tips .content .title{
+        margin-bottom: 15px;
+    }
 
 }
 
-
-
 /* responsividade das sections */
 
+@media(max-width:1666px){
+
+    .container.main .bmi-limitations{
+        justify-content: center;
+    }
+    .container.main .bmi-limitations .card2,
+    .container.main .bmi-limitations .card4{
+        margin-left: 0px;
+    }
+    .container.main .bmi-limitations .card2,
+    .container.main .bmi-limitations .card3{
+        height: 232px;
+    }
+
+    .container.main .bmi-limitations .limitations-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        left: 0;
+        margin: 0 auto;
+    }
+}
