@@ -21,35 +21,35 @@
           </div>
           <div class="content-form">
             <div class="content-info">
-              <h2 class="title"> Body Mass <br> Index Calculator</h2>
-              <p class="text">Better understand your weight in relation to   your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+              <h2 class="title"> Massa corporal <br> Cálculo do IMC </h2>
+              <p class="text">Entenda melhor o seu peso em relação à sua altura usando nossa calculadora de índice de massa corporal (MC). Embora o IMC não seja o único determinante de um peso saudável, oferece um valioso ponto de partida para avaliar a sua saúde e bem-estar geral.</p>
 
             </div>
             <form action="" class="form">
-                <h2>Enter your details below</h2>
+                <h2>Insira seus dados abaixo</h2>
                 <div class="select-unit">
-                  <div class="input-group">
-                    <input type="radio" name="unity" id="metric" value="metric" checked>
-                    <label for="metric">Metric</label>
+                  <div class="input-group radios">
+                    <input type="radio" name="unity" id="metric" value="metric" class="unity">
+                    <label for="metric">Metrico</label>
                   </div>
 
-                  <div class="input-group">
-                    <input type="radio" name="unity" id="imperial" value="imperial">
+                  <div class="input-group radios">
+                    <input type="radio" name="unity" id="imperial" value="imperial" class="unity" checked>
                     <label for="imperial">Imperial</label>
                   </div>
                 </div>
 
-                <div class="unity-metric">
+                <div class="unity-metric none">
                   <div class="inputs">
                     <div class="input-group">
-                      <label for="" class="input-title">Height</label>
-                      <input type="text" class="input-text">
+                      <label for="" class="input-title">Altura</label>
+                      <input type="text" class="input-text" id="height">
                       <span class="input-unity">Cm</span>
                     </div>
 
                     <div class="input-group">
-                      <label for="" class="input-title">Weight</label>
-                      <input type="text" class="input-text">
+                      <label for="" class="input-title">Peso</label>
+                      <input type="text" class="input-text" id="weight">
                       <span class="input-unity">kg</span>
                     </div>
                   </div>
@@ -58,27 +58,27 @@
                 <div class="unity-imperial">
                   <div class="inputs">
                     <div class="input-group">
-                      <label for="" class="input-title">Height</label>
-                      <input type="text" class="input-text">
-                      <span class="input-unity">St</span>
+                      <label for="" class="input-title">Altura</label>
+                      <input type="text" class="input-text" id="input-pes">
+                      <span class="input-unity" >Pés</span>
                     </div>
 
                     <div class="input-group">
-                      <input type="text" class="input-text sub">
-                      <span class="input-unity">Ibs</span>
+                      <input type="text" class="input-text sub" id="input-polegada">
+                      <span class="input-unity" >Polegadas</span>
                     </div>
                   </div>
 
                   <div class="inputs">
                     <div class="input-group">
-                      <label for="" class="input-title">Weight</label>
-                      <input type="text" class="input-text">
-                      <span class="input-unity">Ft</span>
+                      <label for="" class="input-title">Peso</label>
+                      <input type="text" class="input-text" id="input-pedra">
+                      <span class="input-unity" >Pedra</span>
                     </div>
 
                     <div class="input-group">
-                      <input type="text" class="input-text sub">
-                      <span class="input-unity">In</span>
+                      <input type="text" class="input-text sub" id="input-libra">
+                      <span class="input-unity" >Libras</span>
                     </div>
                   </div>
 
@@ -86,12 +86,13 @@
 
                 <div class="results">
                     <div class="results-group">
-                        <span class="title">Your BMI is...</span>
-                        <p class="result">23.2</p>
+                        <span class="title">
+                          Seu IMC é...</span>
+                        <p class="result" id="result">23.2</p>
                     </div>
                     <p class="result-details">
-                      Your BMI suggests you're <a href="#">healthy weight.</a>
-                      Your ideal weight is between.
+                      Seu IMC sugere que você está<a href="#">healthy weight.</a>
+                      Seu peso ideal está entre.
                       <span>63.3kgs - 85.2kgs.</span>
                     </p>
                 </div>
@@ -104,9 +105,10 @@
           <section class="your-result">
             <img src="./assets/images/image-man-eating.webp" alt="Ilustração homem comando comida japonesa" class="image-result">
             <div class="your-result-info">
-                <h2 class="title">What your BMI result means</h2>
+                <h2 class="title">
+                  O que significa o seu resultado de IMC</h2>
                 <p class="text">
-                  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
+                  Uma faixa de IMC de 18,5 a 24,9 é considerada um “peso saudável”. Manter um peso saudável pode diminuir suas chances de ter problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando muitas frutas e vegetais. Além disso, esforce-se para praticar atividade física regular, de preferência cerca de 30 minutos diários, cinco dias por semana.
                 </p>
             </div>
           </section>
@@ -115,24 +117,25 @@
               <div class="content eat">
                 <img src="./assets/images/icon-eating.svg" alt="Ilustração de alimento">
                 <div>
-                  <h2 class="title">Healthy eating</h2>
-                  <p class="text">Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+                  <h2 class="title">Alimentação saudável
+                  </h2>
+                  <p class="text">A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
                 </div>
               </div>
 
               <div class="content eat">
                 <img src="./assets/images/icon-exercise.svg" alt="Ilustração de exercicios">
                 <div>
-                  <h2 class="title">Regular exercise</h2>
-                  <p class="text">Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+                  <h2 class="title">Exercício regular</h2>
+                  <p class="text">O exercício melhora o condicionamento físico, ajuda no controle do peso, eleva o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
                 </div>
               </div>
 
               <div class="content eat">
                 <img src="./assets/images/icon-sleep.svg" alt="Ilustração da lua">
                 <div>
-                  <h2 class="title">Adequate sleep</h2>
-                  <p class="text">Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+                  <h2 class="title">Sono adequado</h2>
+                  <p class="text">O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo a restauração e o rejuvenescimento geral.</p>
                 </div>
               </div>
           </section>
@@ -140,50 +143,50 @@
           <section class="bmi-limitations">
 
             <div class="limitations-text">
-              <h2 class="title">Limitations of BMI</h2>
-              <p class="text">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
+              <h2 class="title">Limitações do IMC</h2>
+              <p class="text">Embora o IMC seja frequentemente um indicador prático de peso saudável, não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente os seus resultados de IMC e, em certos casos, a utilização da medição pode não ser benéfica.</p>
             </div>
 
             <div class="card1 card">
                 <div class="card-log">
                     <img src="./assets/images/icon-gender.svg" alt="Ilustração de genero">
-                    <h3 class="title">Gender</h3>
+                    <h3 class="title">Gênero</h3>
                 </div>
-                <p class="text">The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</p>
+                <p class="text">O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados na avaliação do seu IMC.</p>
             </div>
 
             <div class="card2 card">
                 <div class="card-log">
                   <img src="./assets/images/icon-age.svg" alt="Ilustração de Idade">
-                  <h3 class="title">Age</h3>
+                  <h3 class="title">Idade</h3>
                 </div>
-                <p class="text">In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
+                <p class="text">Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime o conteúdo de gordura corporal.</p>
             </div>
 
 
             <div class="card3 card">
               <div class="card-log">
                 <img src="./assets/images/icon-muscle.svg" alt="Ilustração de Musculação">
-                <h3 class="title">Muscle</h3>
+                <h3 class="title">Músculo</h3>
               </div>
-              <p class="text">BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.</p>
+              <p class="text">O IMC pode classificar erroneamente indivíduos musculosos como com sobrepeso ou obesidade, pois não diferencia músculo de gordura.</p>
             </div>
 
 
             <div class="card4 card">
               <div class="card-log">
                 <img src="./assets/images/icon-pregnancy.svg" alt="Ilustração de gravidez">
-                <h3 class="title">Pregnancy</h3>
+                <h3 class="title">Gravidez</h3>
               </div>
-              <p class="text">Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.</p>
+              <p class="text">As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
             </div>
 
             <div class="card5 card">
               <div class="card-log">
                 <img src="./assets/images/icon-race.svg" alt="Ilustração de Raça">
-                <h3 class="title">Race</h3>
+                <h3 class="title">Corrida</h3>
               </div>
-              <p class="text">Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.</p>
+              <p class="text">Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMC mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira.</p>
             </div>
           </section>
       </main>
@@ -206,5 +209,6 @@
       </footer>
     
       <script src="https://kit.fontawesome.com/3b79cf2102.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./assets/js/index.js"></script>
 </body>
 </html>

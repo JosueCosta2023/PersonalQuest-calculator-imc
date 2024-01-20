@@ -110,7 +110,6 @@ html{
     height: 31px;
 }
 
-
 .container.header .content-form .form .select-unit .input-group label{
     padding-left: 10px;
     font-size: var(--font-body-m);
@@ -122,7 +121,10 @@ html{
 
 .container.header .content-form .form .unity-metric{
     width: 100%;
-    display: block;
+}
+
+.container.header .content-form .form .unity-metric.none{
+    display: none;
 }
 
 .container.header .content-form .form .unity-metric .inputs{
@@ -177,6 +179,9 @@ html{
 /* ESTILIZAÇÃO GRUPO IMPERIAL */
 .container.header .content-form .form .unity-imperial{
     width: 100%;
+}
+
+.container.header .content-form .form .unity-imperial.none{
     display: none;
 }
 
