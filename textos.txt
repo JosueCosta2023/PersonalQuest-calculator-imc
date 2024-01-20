@@ -68,3 +68,12 @@
   Certain health concerns may affect individuals of some Black and Asian origins at 
   lower BMIs than others. To learn more, it is advised to discuss this with your 
   GP or practice nurse.
+
+  Depois de calcular o IMC, você pode interpretar o resultado de acordo com as seguintes categorias:
+
+Abaixo do peso: IMC menor que 18,5
+Peso normal: IMC entre 18,5 e 24,9
+Sobrepeso: IMC entre 25 e 29,9
+Obesidade grau 1: IMC entre 30 e 34,9
+Obesidade grau 2: IMC entre 35 e 39,9
+Obesidade grau 3: IMC igual ou maior que 40
