@@ -278,6 +278,11 @@ html{
     padding-left: 40px;
     width: 90%;
 }
+.container.header .content-form .form .results .result-details a{
+    color: var(--color-white);
+    font-weight: var(--font-semi-bold);
+    text-decoration: underline;
+}
 
 
 

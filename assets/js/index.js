@@ -30,10 +30,7 @@ checkedMetric.addEventListener("click", function(){
     if(checkedMetric.checked){
         formMetric.classList.remove("none")
         formImperial.classList.add("none")
-
-        metricHeight.value      = 0.0;
-        metricWeight.value      = 0.0;
-        imcResult.innerHTML     = (0.0).toFixed(2);
+        zerarCampos()
     } 
 })
 
@@ -41,11 +38,7 @@ checkedImperial.addEventListener("click", function(){
     if(checkedImperial.checked){
         formMetric.classList.add("none")
         formImperial.classList.remove("none")
-        imperialHeightPes.value         = 0.0;
-        imperialHeightPolegada.value    = 0.0;
-        imperialWeightPedra.value       = 0.0;
-        imperialWeightLibra.value       = 0.0;   
-        imcResult.innerHTML             = (0.0).toFixed(2);
+        zerarCampos()
     } 
 })
 
@@ -63,6 +56,10 @@ function metricWeightFun(){
 function imcMetricCalculator(){
     let imcResultTotal =  weightValue / (heightValue * heightValue)
     imcResult.innerHTML = imcResultTotal.toFixed(2)
+    
+    let infoResultado = mensagemResoltado(imcResultTotal)
+    let detailsResult = document.getElementById("result-details");
+    detailsResult.textContent = infoResultado
 }
 
 function imperialHeightPesFun(){
@@ -85,12 +82,63 @@ function imperialWeightLibraFun(){
     imcImprialCalculator()
 }
 
-function imcImprialCalculator(){
+function imcImprialCalculator( ){
     totalLibras = (WeightPedraValue * 14) + WeightLibraValue
     totalPolegada = (HeightPesValue * 12) + HeightPolegadaValue
     
     imcResultTotal = (totalLibras / (totalPolegada **2 )) * 703
-    imcResult.innerHTML = imcResultTotal.toFixed(2)
+    imcResult.innerHTML = imcResultTotal.toFixed(2);
+
+    let infoResultado = mensagemResoltado(imcResultTotal)
+    let detailsResult = document.getElementById("result-details");
+    detailsResult.textContent = infoResultado
+}
+
+
+function zerarCampos(){
+    imperialHeightPes.value         = 0.0;
+    imperialHeightPolegada.value    = 0.0;
+    imperialWeightPedra.value       = 0.0;
+    imperialWeightLibra.value       = 0.0;   
+    imcResult.innerHTML             = (0.0).toFixed(2);
+    metricHeight.value              = 0.0;
+    metricWeight.value              = 0.0;
+    imcResult.innerHTML             = (0.0).toFixed(2);
+    detailsResult.textContent       = "...";
+}
+
+function mensagemResoltado(imcResultTotal){
+
+    let mensagem = '';
+    
+    switch (true){
+        case imcResultTotal < 18.5:
+            mensagem = " abaixo do peso."
+            break;
+        case imcResultTotal >= 18.5 && imcResultTotal < 25:
+            mensagem = " com o peso ideal."
+            break;
+        case imcResultTotal >= 25 && imcResultTotal < 30:
+            mensagem = " com sobrepeso."
+            break;
+        
+        case imcResultTotal >= 30 && imcResultTotal < 35:
+            mensagem = " com obesidade grau I"
+            break;
+            
+        case imcResultTotal >= 35 && imcResultTotal < 40:
+            mensagem = " com obesidade grau II"
+            break;
+
+        case imcResultTotal >= 40 && imcResultTotal < 90:
+            mensagem = " com obesidade grau III"
+            break;
+        default:
+            mensagem = " Insira os dados corretamente."
+    }
+
+    return mensagem
+
 }
 
 
