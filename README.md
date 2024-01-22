@@ -1,18 +1,19 @@
 # PersonalQuest - Frontend Mentor - 
 ## Quest - Body Mass Index Calculator / Calculadora do Indice de Massa Corporal
 
-### [Deploy](https://josuecosta2023.github.io/PersonalQuest-calculator-tip/)
+### [Deploy](https://josuecosta2023.github.io/PersonalQuest-calculator-imc/)
 
-## [FrontEndMentor-Desafio](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
+## [FrontEndMentor-Desafio](https://github.com/JosueCosta2023/PersonalQuest-calculator-imc)
 
 ## Como Utilizar?
-* O usuário deve escolher entre os métodos de cálculo Métrico e Imperial
+* O usuário deve escolher entre os métodos de cálculo Métrico e Imperial.
 * Após insira os dados nos campos;
     * O sistema métrico exige dados de Altura e Peso do usuário.
     * O sistema Imperial exige dados de;
         * PES E POLEGADAS para calcular a Altura,
         * PEDRA E LIBRA para calcular o Peso.
 * Após a inserção dos dados o sistema exibe ao usuário o valor do IMC e uma mensagem informando o seu nível de massa corporal.
+* As intruções na parte inferior do website são estáticas e trazem informações relevantes de como e quando utilizar o calulo do IMC e em quais situações este cálculo deve ser ignorado.
 
 # Desafio: 
 * Criar calculadora de IMC

@@ -59,7 +59,7 @@ function imcMetricCalculator(){
     
     let infoResultado = mensagemResoltado(imcResultTotal)
     let detailsResult = document.getElementById("result-details");
-    detailsResult.textContent = infoResultado
+    detailsResult.innerHTML = "Seu IMC sugere que você está " + infoResultado
 }
 
 function imperialHeightPesFun(){
@@ -91,7 +91,7 @@ function imcImprialCalculator( ){
 
     let infoResultado = mensagemResoltado(imcResultTotal)
     let detailsResult = document.getElementById("result-details");
-    detailsResult.textContent = infoResultado
+    detailsResult.textContent = "Seu imc sugere que você está " + infoResultado
 }
 
 
