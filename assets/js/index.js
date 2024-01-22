@@ -57,7 +57,7 @@ function imcMetricCalculator(){
     let imcResultTotal =  weightValue / (heightValue * heightValue)
     imcResult.innerHTML = imcResultTotal.toFixed(2)
     
-    let infoResultado = mensagemResoltado(imcResultTotal)
+    let infoResultado = mensagemResultado(imcResultTotal)
     let detailsResult = document.getElementById("result-details");
     detailsResult.innerHTML = "Seu IMC sugere que você está " + infoResultado
 }
@@ -89,7 +89,7 @@ function imcImprialCalculator( ){
     imcResultTotal = (totalLibras / (totalPolegada **2 )) * 703
     imcResult.innerHTML = imcResultTotal.toFixed(2);
 
-    let infoResultado = mensagemResoltado(imcResultTotal)
+    let infoResultado = mensagemResultado(imcResultTotal)
     let detailsResult = document.getElementById("result-details");
     detailsResult.textContent = "Seu imc sugere que você está " + infoResultado
 }
@@ -107,7 +107,7 @@ function zerarCampos(){
     detailsResult.textContent       = "...";
 }
 
-function mensagemResoltado(imcResultTotal){
+function mensagemResultado(imcResultTotal){
 
     let mensagem = '';
     
